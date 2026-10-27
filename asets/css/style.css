@@ -3,17 +3,32 @@
     margin: 0px;
     box-sizing: border-box;
 }
-#html {
-font-family: Arial, Helvetica, sans-serif;
-}
-#main {
 
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding: 0 8px;
 }
 .clear{
     clear: both;
 }
 .text-white{
     color: #fff !important;
+}
+.col-thirt{
+    width: 33.33333%; 
+}
+
+/*code*/
+
+#html {
+font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
 }
 #header{
     height: 46.5px;
@@ -145,17 +160,19 @@ min-width: 160px;
     line-height: 23px;
     text-align: justify;
 }
-#content .subcontent .thanhvien{
-    display: flex;
-    justify-content:space-between;
-   padding-top: 32px;
+#content .subcontent .name-list{
+   margin-top: 48px;
 
 }
-#content .subcontent .thanhvien img {
+
+#content .subcontent .name-list img {
 width: 60%;
-height: auto; 
+
 padding-top: 15px;
 
+}
+#content .subcontent .name-list p{
+    font-size: 15px;
 }
 .tour-ticket{
     background-color: #000;
@@ -193,27 +210,18 @@ padding-top: 15px;
 
   
 }
-.muave{
-    display: flex;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: 40px;
+.buy-tickets{
+   margin-top: 32px;
 }
-.submuave{
-padding: 10px 10px;
-height:150px;
+.buy-tickets img{
+    width: 100%;
 }
-
-.submuave .aboutve{
+ .aboutve{
 background-color: #fff;
 margin-top: -5px;
 
-
 }
 
-.submuave img{
-    width: 100%;
-}
 .aboutve .tenve{
     padding: 20px 20px;
 }
@@ -224,8 +232,7 @@ margin-top: -5px;
 .aboutve .gioithieuve{
      padding: 20px 20px;
 }
-.submuave .aboutve button{
-    display: inline-block;
+.aboutve button{   
    margin-left: 20px;
    margin-bottom: 20px;
    background-color: #000;
@@ -233,7 +240,7 @@ margin-top: -5px;
    color: #fff;
    text-decoration: none;
 }
-.submuave .aboutve button:hover {
+ .aboutve button:hover {
  background-color: #777474;
  color:#000;
 }
@@ -257,7 +264,7 @@ margin-top: -5px;
     background-color: #fff;
     position: relative;
     min-height: 200px;
-    animation: modalin 0.5s;
+    animation: modalin 0.9s;
 }
 .modal-close i{
     position: absolute;
@@ -330,6 +337,7 @@ margin-top: -5px;
         transform: translateY(-200px);
     }
     to{
+        opacity: 1;
         transform: translateY(0px);
     }
 }
