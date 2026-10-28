@@ -162,7 +162,7 @@ min-width: 160px;
 }
 #content .subcontent .name-list{
    margin-top: 48px;
-
+    text-align: center;
 }
 
 #content .subcontent .name-list img {
