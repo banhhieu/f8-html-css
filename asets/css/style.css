@@ -22,6 +22,8 @@
     width: 33.33333%; 
 }
 
+
+
 /*code*/
 
 #html {
@@ -244,6 +246,78 @@ margin-top: -5px;
  background-color: #777474;
  color:#000;
 }
+/*CONTACT*/
+.contact-content {
+    margin-top: 30px;
+    height: 200px;
+    display: flex;
+}
+.contact-content .imformation{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+.imformation .number-phone{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imformation i::before{
+    -webkit-text-stroke: 0.6px;
+    padding-right: 10px;
+}
+
+.input-imformation .place-name {
+ display: flex;
+ justify-content: space-between;
+}
+
+.input-imformation .place-name .name ,
+.input-imformation .place-name .email,
+.input-imformation .message{
+    width: 180px;
+    padding:7px 7px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    
+   
+}
+.input-imformation .send{
+   margin-left: 310px;
+   font-size: 20px;
+   padding: 5px 5px;
+   color: #fff;
+   background-color: #000;
+}
+.input-imformation .send:hover{
+    color: #000000;
+    background-color: #ccc;
+}
+.input-imformation .message{
+    width: 100%;
+}
+#main .map img{
+    width: 100%;
+}
+#footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+
+}
+#footer .internet i{
+    font-size: 25px;
+}
+#footer .W3-shcool a{
+    color: #3f3e3e;
+}
+
+
+/*MODAL*/
 .modal{
     position: fixed;
     top: 0px;
